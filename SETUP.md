@@ -2,9 +2,11 @@
 
 ## Prerequisites
 
-- Node.js (v16 or higher)
-- npm or yarn
+- **Node.js (v16 or higher)** - [Installation Guide](./INSTALLATION.md)
+- npm or yarn (comes with Node.js)
 - Modern browser (Chrome/Edge recommended for Web Speech API)
+
+> **Note:** If you don't have Node.js installed, please see [INSTALLATION.md](./INSTALLATION.md) for detailed installation instructions.
 
 ## Installation
 

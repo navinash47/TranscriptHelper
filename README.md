@@ -30,13 +30,15 @@ This is a personal-use application designed for local network deployment (single
   - ✅ Project folder structure established
   - ✅ Environment configuration and .gitignore created
   - ✅ Setup documentation created
+  - ✅ **Node.js v24.11.0 installed**
+  - ✅ **All dependencies installed** (root, server, client)
 
 ### 🚧 In Progress
 - **Phase 2 - Basic UI Foundation**: Ready to begin implementation
 
 ### 📝 To Be Implemented
 
-**Current Status**: Phase 1 (Project Setup) is complete. The project structure is ready for development. Next step is Phase 2: Basic UI Foundation.
+**Current Status**: Phase 1 (Project Setup) is **100% complete**. Node.js is installed, all dependencies are installed, and the project is ready for development. Next step is Phase 2: Basic UI Foundation.
 
 **What's Been Done**:
 1. ✅ Analyzed the complete SRS document (214 lines)
@@ -53,11 +55,14 @@ This is a personal-use application designed for local network deployment (single
    - Development scripts for running both servers
    - Environment variable configuration
    - Setup documentation (SETUP.md)
+   - **Node.js v24.11.0 installed via winget**
+   - **All dependencies installed** (root: 30 packages, server: 125 packages, client: 1328 packages)
 
 **Next Steps**:
-1. Install dependencies: `npm run install-all`
-2. Configure environment variables (see SETUP.md)
-3. Begin implementing Phase 2: Basic UI Foundation
+1. ✅ ~~Install dependencies~~ - **COMPLETE**
+2. Configure environment variables (create `server/.env` with OpenAI API key - see SETUP.md)
+3. Test the setup: `npm run dev` (starts both frontend and backend)
+4. Begin implementing Phase 2: Basic UI Foundation
 
 ### 📝 To Be Implemented
 
@@ -150,22 +155,32 @@ This is a personal-use application designed for local network deployment (single
 - Microphone access
 - (Optional) Camera access or Wi-Fi camera
 
-### Setup Instructions
+### Quick Start
 
+**Windows:**
+- Double-click `start.bat` or run `.\start.ps1` in PowerShell
+- To stop: Double-click `stop.bat` or run `.\stop.ps1`
+
+**Linux/Mac:**
 ```bash
-# Clone the repository
-git clone <repository-url>
-cd TranscriptHelper
-
-# Install dependencies (to be added)
-npm install
-
-# Start development server (to be implemented)
-npm run dev
-
-# Start backend server (to be implemented)
-npm run server
+chmod +x start.sh stop.sh
+./start.sh
+# To stop: ./stop.sh
 ```
+
+**Manual Start:**
+```bash
+# Install dependencies
+npm run install-all
+
+# Start both servers
+npm run dev
+```
+
+The scripts will automatically:
+- Check for Node.js installation
+- Install missing dependencies
+- Start both frontend (port 3000) and backend (port 3001) servers
 
 ## 🚀 Usage
 
