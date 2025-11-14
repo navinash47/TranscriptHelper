@@ -67,6 +67,23 @@
   }
 }
 
+.error-banner {
+  background-color: #fef2f2;
+  border-bottom: 1px solid #fecaca;
+  padding: 0.75rem 1rem;
+  color: #dc2626;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.error-hint {
+  font-size: 0.8rem;
+  color: #991b1b;
+  font-style: italic;
+}
+
 /* Mobile optimizations */
 @media (max-width: 768px) {
   .app-header h1 {
